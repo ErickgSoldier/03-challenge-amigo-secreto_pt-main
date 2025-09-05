@@ -3,38 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>Amigo Secreto Moderno</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <title>Amigo Secreto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <main class="main-content">
-        <header class="header-banner">
+
+    <main class="card">
+        <header>
             <h1 class="main-title">Amigo Secreto</h1>
-            <img src="assets/amigo-secreto.png" alt="Imagem representativa de amigo secreto">
+            <p class="subtitle">Adicione seus amigos e realize o sorteio!</p>
         </header>
         
-        <section class="input-section">
-            <h2 class="section-title">Digite o nome dos seus amigos</h2>
-            <div class="input-wrapper">
-                <input type="text" id="amigo" class="input-name" placeholder="Digite um nome">
-                <button class="button-add" onclick="adicionarAmigo()">Adicionar</button>
-            </div>
-           
-            <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
-            <ul id="resultado" class="result-list" aria-live="polite"></ul>
+        <div class="content-wrapper">
+            <section class="controls-section">
+                <div class="input-container">
+                    <h2 class="section-title">Adicionar um novo amigo</h2>
+                    <div class="input-wrapper">
+                        <input type="text" id="nome-amigo" class="input-name" placeholder="Nome do amigo">
+                        <button class="button-add" onclick="adicionar()">Adicionar</button>
+                    </div>
+                    <p id="error-message" class="error-message hidden"></p>
+                </div>
+                
+                <div class="draw-container">
+                     <button class="button-draw" onclick="sortear()">
+                        🎲 Sortear Amigo
+                    </button>
+                </div>
+            </section>
 
-            <div class="button-container">
-                <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
-                    <img src="assets/play_circle_outline.png" alt="Ícone para sortear">
-                    Sortear amigo
-                </button>
-            </div>
-        </section>
+            <section class="friends-list-section">
+                <h2 class="section-title">Amigos Adicionados</h2>
+                 <ul id="lista-amigos" class="name-list">
+                    <li class="empty-message">Nenhum amigo adicionado ainda.</li>
+                </ul>
+            </section>
+        </div>
     </main>
+    
+    <div id="modal-resultado" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button class="modal-close" onclick="fecharModal()">×</button>
+            <h2>O amigo secreto é...</h2>
+            <p id="resultado-sorteio"></p>
+        </div>
+    </div>
 
     <script src="app.js" defer></script>
 </body>
