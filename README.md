@@ -30,7 +30,7 @@ O projeto está **concluído** e todas as funcionalidades planejadas foram imple
 -   **Usabilidade Aprimorada:** É possível adicionar nomes utilizando a tecla "Enter", agilizando o processo de cadastro.
 
 #### Demonstração em GIF
-/assets/challenge-one-gif.gif
+![Demonstração da Aplicação](03-challenge-amigo-secreto_pt-main/assets/challenge-one-gif.gif)
 
 <br>
 
