@@ -8,19 +8,6 @@
 
 <br>
 
-## 📋 Índice
-
-* [Descrição do Projeto](#descrição-do-projeto)
-* [Status do Projeto](#status-do-projeto)
-* [Funcionalidades e Demonstração](#funcionalidades-e-demonstração-da-aplicação)
-* [Acesso ao Projeto](#acesso-ao-projeto)
-* [Tecnologias Utilizadas](#tecnologias-utilizadas)
-* [Pessoa Desenvolvedora](#pessoa-desenvolvedora-do-projeto)
-* [Contato](#contato)
-* [Licença](#licença)
-
-<br>
-
 ## 📝 Descrição do Projeto
 
 O **Sorteador de Amigo Secreto** é uma aplicação web simples, intuitiva e totalmente responsiva, criada para facilitar a organização de sorteios de amigo secreto (ou amigo oculto). Seja para festas de fim de ano, confraternizações de empresa ou encontros de amigos, esta ferramenta torna o processo de adicionar participantes e realizar o sorteio rápido e divertido, funcionando perfeitamente em qualquer dispositivo, seja ele um computador, tablet ou celular.
@@ -43,7 +30,7 @@ O projeto está **concluído** e todas as funcionalidades planejadas foram imple
 -   **Usabilidade Aprimorada:** É possível adicionar nomes utilizando a tecla "Enter", agilizando o processo de cadastro.
 
 #### Demonstração em GIF
-`![GIF de Demonstração](assets/challenge-one-gif.gif)`
+![Demonstração do Projeto](03-challenge-amigo-secreto_pt-main/assets/challenge-one-gif.gif)
 
 <br>
 
@@ -52,7 +39,7 @@ O projeto está **concluído** e todas as funcionalidades planejadas foram imple
 Você pode acessar a aplicação de duas formas:
 
 1.  **Acessar a versão online:**
-    * O projeto está hospedado e pode ser acessado através do link: `[COLOQUE O LINK DO SEU GITHUB PAGES AQUI]`
+    * O projeto está hospedado e pode ser acessado através do link: `https://erickgsoldier.github.io/03-challenge-amigo-secreto_pt-main/`
 
 2.  **Rodar o projeto localmente:**
     * Basta clonar este repositório e abrir o arquivo `index.html` no seu navegador de preferência.
